@@ -77,7 +77,7 @@ nav a.active{
 
 section{
   width: 60%;
-  margin: 0.5rem auto;
+  margin: 2rem auto;
   padding: 2rem;
   border-radius: 30px;
   background-color: rgba(11, 10, 10, 0.5);
@@ -117,12 +117,12 @@ h2{
 
 .projeto-conteudo{
   flex: 1;
+  display: flex;
   position: relative;
   padding-bottom: 3rem; 
   display: flex;
   flex-direction: column;  
-  align-items: flex-start; 
-  justify-content: space-between;            
+  align-items: flex-start;            
 }
 
 .projeto-icons{
@@ -151,10 +151,9 @@ h2{
 .projeto-buttons,
 .projeto-buttons2{
   position: absolute;
-  bottom: 0.5rem;  
-  right: 1rem;           
+  bottom: 0.5rem;             
   display: flex;
-  margin-top: 0rem;          
+  margin-top: 1rem;          
   justify-content: flex-end;
   align-self: flex-end;  
 }
@@ -201,35 +200,4 @@ footer{
     flex-direction: column;
     gap: 1rem;
   }
-  .projetos-container {
-    flex-direction: column;   /* empilha as boxes */
-    gap: 1.5rem;              /* menos gap no mobile */
-    padding: 0 0.5rem;
-  }
-
-  .projeto-box {
-    flex: 0 1 100%;           
-    max-width: 400px;       
-    margin: 0 auto;
-    padding: 1rem;
-  }
-
-  /* Ajustes internos, se necessário */
-  .projeto {
-    flex-direction: column;   /* imagem em cima, conteúdo embaixo */
-    gap: 1rem;
-  }
-  .projeto-image {
-     width: 100%;
-    max-width: 300px;  /* largura máxima de 300px */
-    max-height: 500px; /* altura máxima */
-    object-fit: cover; /* mantém proporção */
-    margin: 0 auto;    /* centraliza */
-    border-radius: 8px;
-  }
-  .projeto-buttons {
-    justify-content: auto;  /* centraliza botão no card */
-    margin-top: 0.75rem;
-  }
 }
-  
