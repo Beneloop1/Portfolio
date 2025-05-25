@@ -35,7 +35,7 @@ main{
   display: flex;               
   flex-direction: column;      
   align-items: center;        
-  margin: 0auto;
+  margin: 0 auto;
 }
 
 header{

@@ -117,16 +117,18 @@ section{
 
 #contato input,
 #contato textarea{
-  display: block;
-  width: 1000px;
+   width: 100%;         /* ocupa 100% da largura do #contato, respeitando o max-width */
+  box-sizing: border-box; /* inclui padding/borda no calculo da largura */
+  max-width: 100%;     /* garante que não ultrapasse o container */
   padding: 0.75rem;
-  border: 0.5px solid #700f85;
+  border: 1px solid #700f85;
   border-radius: 30px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255,255,255,0.1);
   color: #fff;
   font-size: 0.95rem;
   font-family: inherit;
   resize: vertical;
+  margin: 1rem 0;      /* espaçamento entre os campos */
 }
 
 #contato input:focus,
@@ -159,8 +161,8 @@ section{
 
 @media (max-width: 480px){
   #contato {
-    margin: 1rem;
-    padding: 1rem;
+    margin: 0 auto;
+    max-width: 80%;
 }
 
 #contato button{

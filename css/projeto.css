@@ -5,13 +5,12 @@
   box-sizing: border-box;
 }
 .container{
-  position: flex;
+  display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  width: 100%;
-  margin: 0 auto;
-  align-items: flex-start
-
+  gap: 2rem;
+  justify-content: center;
+  margin: 0.5rem auto;
+  padding: 0 1rem;
 }
 
 body{
@@ -19,6 +18,7 @@ body{
   flex-direction: column;      
   align-items: center;       
   min-height: 100vh;
+  margin: auto;
   font-family: 'Segoe UI', Tahoma, sans-serif;
   line-height: 1.4;
   color: #fff;
@@ -78,7 +78,7 @@ nav a.active{
 
 section{
   width: 60%;
-  margin: 2rem auto;
+  margin: 0.5rem auto;
   padding: 2rem;
   border-radius: 30px;
   background-color: rgba(11, 10, 10, 0.5);
@@ -89,35 +89,51 @@ section{
   background-size: cover;
   line-height: 1.5;
 }
-
 .projeto{
-  display: flex;           /* coloca imagem e conteúdo lado a lado */
-  gap: 2rem;               /* espaço entre eles */
-  align-items: flex-start; /* alinha pelo topo, ajuste se quiser centro */
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  align-items: stretch; /* garante mesma altura */
 }
 
 h2{
   color: #ebe9ed;
 }
 
+.projeto-box {
+  margin-bottom: 1rem;   /* ao invés de margin-bottom: 2rem ou nada */
+  /* o resto do seu estilo de box */
+}
 
 .projeto-image{
-  width: 300px;    
+  flex: 0 0 300px;         /* largura fixa de 300px */
+  width: 100%;
+  max-width: 300px;
   height: auto;
+  border-radius: 8px;
 }
 
 .projeto-conteudo{
+  flex: 1;
+  position: relative;
+  padding-bottom: 3rem; /* espaço para o botão */
   display: flex;
-  flex-direction: column;  /*empilha ícones e botão internamente */
-  flex: 1;                 
+  flex-direction: column;  /* empilha verticalmente */
+  align-items: flex-start; /* alinha à esquerda (da coluna) */
+  justify-content: space-between;
+  /* não use justify-content: space-between */
+                
 }
 
 .projeto-icons{
   display: flex;
-  gap: 5rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;            /* ajusta o espaçamento entre cada ícone */
   margin-top: 15rem;
-  margin-bottom: 1rem;
 }
+
+
+
 .projeto-icon{
   width: 35px;
   height: 35px;
@@ -128,27 +144,24 @@ h2{
 }
 
 .projeto-info{
-  display: flex;
+   display: flex;
   flex-direction: column;
-  align-items: center;      
-  gap: 0.5rem;
-  flex: 0;              
+  align-items: center;
+  gap: 0.5rem;              
 }
 
-.projeto-buttons{
- width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  margin-left: -29rem;
-  margin-top: 16rem; 
-}
-
+.projeto-buttons,
 .projeto-buttons2{
+  position: absolute;
+  bottom: 0.5rem;  
+  right: 1rem;            /* alinha o botão na parte inferior */
   display: flex;
+  margin-top: 0rem;          /* sem margem gigantesca */
   justify-content: flex-end;
-  margin-top: 22rem;  
-  
+  align-self: flex-end;   /* joga o botão para a direita */
 }
+
+
 
 .btn-externo{
   margin-left: 3.5rem;
@@ -169,26 +182,6 @@ h2{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer{
   margin: auto;
   margin-top: auto;       
@@ -202,6 +195,7 @@ footer{
 }
 
 @media (max-width: 768px){
+  
   header,
   section,
   footer {
