@@ -5,12 +5,12 @@
   box-sizing: border-box;
 }
 .container{
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
   width: 100%;
-  flex-direction: column;
-  align-items: top;
+  margin: 0 auto;
+  align-items: flex-start
 
 }
 
@@ -19,7 +19,6 @@ body{
   flex-direction: column;      
   align-items: center;       
   min-height: 100vh;
-  margin: auto;
   font-family: 'Segoe UI', Tahoma, sans-serif;
   line-height: 1.4;
   color: #fff;
@@ -37,7 +36,7 @@ main{
   display: flex;               
   flex-direction: column;      
   align-items: center;        
-  margin: 0auto;
+  margin: 0 auto;
 }
 
 header{
@@ -109,7 +108,7 @@ h2{
 
 .projeto-conteudo{
   display: flex;
-  flex-direction: center;  /*empilha ícones e botão internamente */
+  flex-direction: column;  /*empilha ícones e botão internamente */
   flex: 1;                 
 }
 
@@ -130,31 +129,26 @@ h2{
 
 .projeto-info{
   display: flex;
-  flex-direction: column;   
+  flex-direction: column;
   align-items: center;      
-  gap: 0.5rem;              
+  gap: 0.5rem;
+  flex: 0;              
 }
 
 .projeto-buttons{
-  position: relative;
-  width: 100%;
-  margin-top: 2rem;
+ width: 100%;
   display: flex;
   justify-content: flex-end;
-  width: 100%;
-  margin-top: 38rem;
-  position: relative;
-  margin-left: -61.3rem;
+  margin-left: -29rem;
+  margin-top: 16rem; 
 }
 
 .projeto-buttons2{
   display: flex;
-  width: 100%;
-  margin-top: 23rem;  
+  justify-content: flex-end;
+  margin-top: 22rem;  
   
 }
-
-
 
 .btn-externo{
   margin-left: 3.5rem;
@@ -195,9 +189,9 @@ h2{
 
 
 
-footer {
+footer{
   margin: auto;
-  margin-top: auto;        /* empurra o footer para o fim do body */
+  margin-top: auto;       
   width: 80%;
   text-align: center;
   padding: 1rem;
@@ -207,11 +201,7 @@ footer {
   border-radius: 30px;
 }
 
-
-
-
-/* 13) RESPONSIVIDADE */
-@media (max-width: 768px) {
+@media (max-width: 768px){
   header,
   section,
   footer {
