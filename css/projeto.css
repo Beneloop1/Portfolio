@@ -198,9 +198,10 @@ footer{
   }
 
   .projeto-box {
-    flex: 0 1 100%;           /* cada box ocupa 100% */
-    max-width: none;          /* libera o max-width */
+    flex: 0 1 100%;           
+    max-width: 400px;       
     margin: 0 auto;
+    padding: 1rem;
   }
 
   /* Ajustes internos, se necessário */
@@ -209,12 +210,16 @@ footer{
     gap: 1rem;
   }
   .projeto-image {
-    width: 100%;
-    max-width: none;
+     width: 100%;
+    max-width: 300px;  /* largura máxima de 300px */
+    max-height: 500px; /* altura máxima */
+    object-fit: cover; /* mantém proporção */
+    margin: 0 auto;    /* centraliza */
+    border-radius: 8px;
   }
   .projeto-buttons {
-    justify-content: center;  /* centraliza botão no card */
-    margin-top: 1rem;
+    justify-content: auto;  /* centraliza botão no card */
+    margin-top: 0.75rem;
   }
 }
   
