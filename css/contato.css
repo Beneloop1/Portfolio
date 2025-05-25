@@ -1,0 +1,199 @@
+/*BASE */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  flex-direction: column;
+  align-items: top;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  line-height: 1.4;            
+  color: #fff;
+  background: linear-gradient(90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(103, 53, 110, 1) 72%,
+    rgba(16, 172, 219, 1) 100%
+  );
+}
+
+main{
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  width: 80%;
+  margin: 1rem auto 0;
+  padding: 1.2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  box-shadow: 5px 5px 30px rgba(241, 238, 243, 0.5);
+  border-radius: 30px;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a{
+  color: #e8e5e5;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  transition: color 0.2s;
+}
+nav a:hover,
+nav a.active{
+  color: #900de7;
+}
+
+section{
+  width: 60%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 30px;
+  background-color: rgba(11, 10, 10, 0.5);
+  box-shadow: 5px 5px 30px rgba(147, 5, 242, 0.5);
+  color: #ab03ff;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.5;
+}
+
+#contato{
+  max-width: 60%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.301);
+  box-shadow: 5px 5px 30px 5px #9505ee;
+  color: #ffffff;
+}
+
+#contato h2{
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #8f12d3;
+}
+
+#contato form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem ;
+}
+
+#contato label{
+  font-size: 0.9rem;
+}
+
+#contato input,
+#contato textarea{
+  display: block;
+  width: 1000px;
+  padding: 0.75rem;
+  border: 0.5px solid #700f85;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 0.95rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+#contato input:focus,
+#contato textarea:focus{
+  outline: none;
+  border-color: #900de7;
+  box-shadow: 0 0 4px #900de7;
+}
+
+/*Botao */
+#contato button{
+  align-self: flex-end;
+  padding: 0.75rem 1.5rem;
+  background-color: #edebee;
+  color: #831beb;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  align-self: center;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+#contato button:hover{
+  background: linear-gradient(135deg, #900de7, #530890);
+  color: #fff;
+}
+
+@media (max-width: 480px){
+  #contato {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#contato button{
+    width: 100%;
+    align-self: stretch;
+  }
+}
+
+footer{
+  position: relative;
+  z-index: 1;
+  width: 80%;
+  margin: 1.0rem auto;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #fcf8f8;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 30px rgba(243, 242, 244, 0.5);
+  border-radius: 30px;
+}
+
+
+@media (max-width: 768px){
+  header,
+  section,
+  footer {
+    width: 90%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+     

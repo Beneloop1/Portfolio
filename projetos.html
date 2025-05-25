@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>• Projetos</title>
+  <link rel="stylesheet" href="css/projeto.css" />
+  <style>
+    /* Garantir que o canvas cubra toda a tela */
+    #trail-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+  <!--Canvas para efeito do  mouse -->
+  <canvas id="trail-canvas"></canvas>
+
+  <div class="container">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projetos.html">projetos</a></li>
+          <li><a href="contatos.html">contatos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="projetos">
+      <h2>Projetos em Processo</h2>
+      <div class="projeto">
+        <img src="telas/teste.png" alt="Mockup do Projeto 1" class="projeto-image" />
+        <div class="projeto-conteudo">
+          <div class="projeto-icons">
+            <div class="projeto-info">
+              <img src="imagens/kotlin.png" alt="Logo Kotlin" class="projeto-icon" />
+              <span class="projeto-description">Kotlin</span>
+            </div>
+            <div class="projeto-info">
+              <img src="imagens/android.png" alt="Logo Android" class="projeto-icon" />
+              <span class="projeto-description">Android</span>
+            </div>
+            <div class="projeto-info">
+              <img src="imagens/firebase.png" alt="Logo Firebase" class="projeto-icon" />
+              <span class="projeto-description">Firebase</span>
+            </div>
+            <div class="projeto-info">
+              <img src="imagens/jetpack1.png" alt="Logo Jetpack Compose" class="projeto-icon" />
+              <span class="projeto-description">Jetpack Compose</span>
+            </div>
+          </div>
+          <div class="projeto-buttons">
+            <a href="https://www.figma.com/proto/g7KXZydExj7VLSbGKeEO4F/Untitled?node-id=0-1&t=tOz1uiuIao0iGC2W-1"
+               class="btn-externo" target="_blank" rel="noopener noreferrer">
+              Ver Mais
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="prototipos-figma">
+      <h2>Projetos em Processo</h2>
+      <div class="projeto">
+        <img src="telas/lanche1.png" alt="Mockup do Projeto 1" class="projeto-image" />
+        <div class="projeto-conteudo">
+          
+          <div class="projeto-icons">
+            <div class="projeto-info">
+              <img src="imagens/Figma.png" alt="Logo Kotlin" class="projeto-icon" />
+              <span class="projeto-description">Kotlin</span>
+            </div>
+
+            <div class="projeto-buttons2">
+            <a href="https://www.figma.com/proto/q5q1YM3kAeEEMzqDnFzsQh/Untitled?node-id=0-1&t=16eznTgl4wBkUljJ-1"
+               class="btn-externo" target="_blank" rel="noopener noreferrer">
+              Ver Mais
+            </a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 • Benedito Lucas</p>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

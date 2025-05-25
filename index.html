@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>• Home</title>
+  <link rel="stylesheet" href="css/home.css" />
+  <style>
+/* Garantir que o canvas cubra toda a tela */
+    #trail-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+<!--Canvas para efeito do  mouse -->
+  <canvas id="trail-canvas"></canvas>
+  
+  <div class="container">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projetos.html">projetos</a></li>
+          <li><a href="contatos.html">contatos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <img src="imagens/bene.jpg" alt="Foto do Bene">
+        <h1>Benedito Lucas</h1>
+        <p>Olá! Eu sou o Benedito faço análise e desenvolvimento de sistemas na uninter, iniciante em Android Studio com Kotlin e apaixonado por jogos.</p>
+      </section>
+
+      <section id="habilidades">
+        <h3>Habilidades</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Kotlin</li>
+          <li>Firebase</li>
+          <li>Android</li>
+        </ul>
+      </section>
+
+      <section id="redes">
+        <a
+          href="https://www.facebook.com/"class="social-icon facebook"target="_blank"rel="noopener noreferrer"
+          aria-label="Facebook">
+        </a>
+
+        <a
+          href="https://wa.me/5511971508095?text=Ol%C3%A1%20quero%20saber%20mais!"class="social-icon whatsapp"target="_blank"rel="noopener noreferrer"
+          aria-label="whatsapp">
+        </a>
+
+        <a
+          href="https://www.linkedin.com/feed/"class="social-icon linkedin"target="_blank"rel="noopener noreferrer"
+          aria-label="linkedin">
+        </a>
+
+        <a
+          href="https://github.com/Beneloop1"class="social-icon github"target="_blank"rel="noopener noreferrer"
+          aria-label="github">
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 • Benedito Lucas </p>
+    </footer>
+  </div>
+
+ <script src="js/script.js"></script>
+</div>
+</body>
+</html>
