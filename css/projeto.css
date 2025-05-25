@@ -55,7 +55,6 @@ header{
   border-radius: 30px;
 }
 
-/* 7) NAVEGAÇÃO */
 nav ul{
   display: flex;
   list-style: none;
@@ -93,20 +92,23 @@ section{
   display: flex;
   width: 100%;
   gap: 2rem;
-  align-items: stretch; /* garante mesma altura */
+  align-items: stretch; 
 }
 
 h2{
   color: #ebe9ed;
 }
-
 .projeto-box {
-  margin-bottom: 1rem;   /* ao invés de margin-bottom: 2rem ou nada */
-  /* o resto do seu estilo de box */
+  flex: 0 1 calc(50% - 2rem);  /* duas colunas no desktop */
+  max-width: 5000px;            /* limite máximo de largura */
+  border-radius: 16px;
+  padding: 1.5rem;
+
 }
 
+
 .projeto-image{
-  flex: 0 0 300px;         /* largura fixa de 300px */
+  flex: 0 0 300px;       
   width: 100%;
   max-width: 300px;
   height: auto;
@@ -116,23 +118,19 @@ h2{
 .projeto-conteudo{
   flex: 1;
   position: relative;
-  padding-bottom: 3rem; /* espaço para o botão */
+  padding-bottom: 3rem; 
   display: flex;
-  flex-direction: column;  /* empilha verticalmente */
-  align-items: flex-start; /* alinha à esquerda (da coluna) */
-  justify-content: space-between;
-  /* não use justify-content: space-between */
-                
+  flex-direction: column;  
+  align-items: flex-start; 
+  justify-content: space-between;            
 }
 
 .projeto-icons{
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;            /* ajusta o espaçamento entre cada ícone */
+  gap: 1.5rem;        
   margin-top: 15rem;
 }
-
-
 
 .projeto-icon{
   width: 35px;
@@ -154,14 +152,12 @@ h2{
 .projeto-buttons2{
   position: absolute;
   bottom: 0.5rem;  
-  right: 1rem;            /* alinha o botão na parte inferior */
+  right: 1rem;           
   display: flex;
-  margin-top: 0rem;          /* sem margem gigantesca */
+  margin-top: 0rem;          
   justify-content: flex-end;
-  align-self: flex-end;   /* joga o botão para a direita */
+  align-self: flex-end;  
 }
-
-
 
 .btn-externo{
   margin-left: 3.5rem;
@@ -195,15 +191,30 @@ footer{
 }
 
 @media (max-width: 768px){
-  
-  header,
-  section,
-  footer {
-    width: 90%;
+  .projetos-container {
+    flex-direction: column;   /* empilha as boxes */
+    gap: 1.5rem;              /* menos gap no mobile */
+    padding: 0 0.5rem;
   }
 
-  nav ul {
-    flex-direction: column;
+  .projeto-box {
+    flex: 0 1 100%;           /* cada box ocupa 100% */
+    max-width: none;          /* libera o max-width */
+    margin: 0 auto;
+  }
+
+  /* Ajustes internos, se necessário */
+  .projeto {
+    flex-direction: column;   /* imagem em cima, conteúdo embaixo */
     gap: 1rem;
   }
+  .projeto-image {
+    width: 100%;
+    max-width: none;
+  }
+  .projeto-buttons {
+    justify-content: center;  /* centraliza botão no card */
+    margin-top: 1rem;
+  }
 }
+  
