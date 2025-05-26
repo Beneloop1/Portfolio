@@ -52,7 +52,6 @@ header{
   backdrop-filter: blur(8px);
   box-shadow: 5px 5px 30px rgba(241, 238, 243, 0.5);
   border-radius: 30px;
-  margin-bottom: 1rem;
 }
 
 nav ul{
@@ -189,7 +188,7 @@ footer{
 
 @media (max-width: 768px){
   section#contato {
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
   header,
   section,
