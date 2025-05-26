@@ -36,7 +36,6 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 1rem;
 }
 
 header{
@@ -97,7 +96,6 @@ section{
   background-color: rgba(0, 0, 0, 0.301);
   box-shadow: 5px 5px 30px 5px #9505ee;
   color: #ffffff;
-  margin-top: 1rem;
 }
 
 #contato h2{
