@@ -116,10 +116,10 @@ h2{
 .projeto-buttons {
    margin-left: auto;
   justify-content: flex-end;
- 
   margin-left: auto;
   align-self: flex-end;
 }
+
 
 .projeto-box{
   display: block;      
@@ -152,8 +152,8 @@ h2{
   height: auto; 
   display: inline-block;
   padding: 0.4rem 1.2rem;
-  background-color: #700f85;
-  color: #fff;
+  background-color: #f6f5f7;
+  color:  #7c07dc;
   font-weight: bold;
   text-decoration: none;
   border-radius: 20px;
@@ -164,9 +164,10 @@ h2{
 /*feedback visual */
 .btn-externo:hover,
 .btn-externo:focus{
-  background-color: #8e25a8;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+  outline: none;
+  border-color: #a40eef;
+  background: linear-gradient(135deg, #8547c2, #530890);
+  color: #f9f6f6;
 }
 /* Estado ao click */
 .btn-externo:active{

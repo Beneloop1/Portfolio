@@ -135,16 +135,16 @@ section{
 #contato input:focus,
 #contato textarea:focus{
   outline: none;
-  border-color: #900de7;
-  box-shadow: 0 0 4px #900de7;
+  border-color: #a40eef;
+  box-shadow: 0 0 4px #faf9fa;
 }
 
 /*Botao */
 #contato button{
   align-self: flex-end;
   padding: 0.75rem 1.5rem;
-  background-color: #edebee;
-  color: #831beb;
+  background-color: #ebe7ed;
+  color: #7715d8;
   font-size: 1rem;
   font-weight: bold;
   border: none;
@@ -156,8 +156,8 @@ section{
 }
 
 #contato button:hover{
-  background: linear-gradient(135deg, #900de7, #530890);
-  color: #fff;
+  background: linear-gradient(135deg, #8547c2, #530890);
+  color: #f9f6f6;
 }
 
 @media (max-width: 480px){
