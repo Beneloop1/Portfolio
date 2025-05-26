@@ -117,9 +117,9 @@ section{
 
 #contato input,
 #contato textarea{
-   width: 100%;         /* ocupa 100% da largura do #contato, respeitando o max-width */
-  box-sizing: border-box; /* inclui padding/borda no calculo da largura */
-  max-width: 100%;     /* garante que não ultrapasse o container */
+  width: 100%;         
+  box-sizing: border-box; 
+  max-width: 100%;    
   padding: 0.75rem;
   border: 1px solid #700f85;
   border-radius: 30px;
@@ -128,7 +128,7 @@ section{
   font-size: 0.95rem;
   font-family: inherit;
   resize: vertical;
-  margin: 1rem 0;      /* espaçamento entre os campos */
+  margin: 1rem 0;     
 }
 
 #contato input:focus,
