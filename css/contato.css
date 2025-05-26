@@ -187,6 +187,9 @@ footer{
 
 
 @media (max-width: 768px){
+  section#contato {
+    margin-top: 3rem;
+  }
   header,
   section,
   footer {
